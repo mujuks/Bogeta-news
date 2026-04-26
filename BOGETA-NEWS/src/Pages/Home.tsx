@@ -9,7 +9,7 @@ const Home = () => {
     <div className="min-h-screen bg-white font-sans text-gray-900">
 
       {/* 🔴 TOP BAR - Citizen Style with Green */}
-      <div className="bg-gradient-to-r from-red-600 via-red-600 to-green-600 text-white">
+      <div className="bg-linear-to-r from-red-600 via-red-600 to-green-600 text-white">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center text-xs md:text-sm">
           <div className="flex items-center gap-4">
             <span className="font-bold hidden sm:inline">
@@ -44,7 +44,7 @@ const Home = () => {
                   href="#" 
                   className={`px-4 py-2 rounded font-bold text-sm uppercase tracking-wide transition-all ${
                     idx === 0 
-                      ? "bg-gradient-to-r from-red-600 to-green-600 text-white shadow-md" 
+                      ? "bg-linear-to-r from-red-600 to-green-600 text-white shadow-md" 
                       : "text-blue-900 hover:bg-green-50 hover:text-green-600"
                   }`}
                 >
@@ -55,7 +55,7 @@ const Home = () => {
 
             {/* Search & Mobile Menu */}
             <div className="flex items-center gap-3">
-              <button className="hidden md:flex items-center gap-2 bg-gradient-to-r from-blue-900 to-green-700 hover:from-blue-800 hover:to-green-600 text-white px-4 py-2 rounded font-bold text-sm transition shadow-md">
+              <button className="hidden md:flex items-center gap-2 bg-linear-to-r from-blue-900 to-green-700 hover:from-blue-800 hover:to-green-600 text-white px-4 py-2 rounded font-bold text-sm transition shadow-md">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
@@ -88,7 +88,7 @@ const Home = () => {
                   key={item} 
                   href="#" 
                   className={`block px-4 py-3 rounded font-bold uppercase text-sm ${
-                    idx === 0 ? "bg-gradient-to-r from-red-600 to-green-600 text-white" : "text-blue-900 hover:bg-green-50"
+                    idx === 0 ? "bg-linear-to-r from-red-600 to-green-600 text-white" : "text-blue-900 hover:bg-green-50"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -101,7 +101,7 @@ const Home = () => {
       </header>
 
       {/* 🔴 BREAKING NEWS - Citizen Style with Green */}
-      <div className="bg-gradient-to-r from-red-600 via-red-600 to-green-600 text-white overflow-hidden">
+      <div className="bg-linear-to-r from-red-600 via-red-600 to-green-600 text-white overflow-hidden">
         <div className="container mx-auto px-4 flex items-center">
           <span className="bg-blue-900 font-black text-sm px-4 py-3 whitespace-nowrap z-10 border-r-2 border-green-500">
             BREAKING
@@ -125,18 +125,18 @@ const Home = () => {
               <img 
                 src="https://images.unsplash.com/photo-1504711432869-6d6549298492?auto=format&fit=crop&w=1200&q=80" 
                 alt="Main story" 
-                className="w-full h-[300px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-500" 
+                className="w-full h-75 md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-500" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <span className="bg-gradient-to-r from-red-600 to-green-600 text-white text-xs font-bold px-3 py-1 rounded uppercase shadow-lg">Politics</span>
+                <span className="bg-linear-to-r from-red-600 to-green-600 text-white text-xs font-bold px-3 py-1 rounded uppercase shadow-lg">Politics</span>
                 <h1 className="text-white text-2xl md:text-4xl font-black mt-3 leading-tight">
                   Major Policy Shift: What It Means for Kenya's Economy
                 </h1>
                 <p className="text-gray-200 text-sm mt-2 line-clamp-2">
                   Full breakdown of economic impact, citizen reactions, and expert analysis as the government unveils sweeping reforms.
                 </p>
-                <span className="text-gray-300 text-xs mt-2 block flex items-center gap-1">
+                <span className="text-gray-300 text-xs mt-2 block items-center gap-1">
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
@@ -164,7 +164,7 @@ const Home = () => {
                 </div>
               </div>
             ))}
-            <button className="w-full bg-gradient-to-r from-blue-900 to-green-700 hover:from-blue-800 hover:to-green-600 text-white py-3 rounded font-bold text-sm transition shadow-md">
+            <button className="w-full bg-linear-to-r from-blue-900 to-green-700 hover:from-blue-800 hover:to-green-600 text-white py-3 rounded font-bold text-sm transition shadow-md">
               Watch Live
             </button>
           </div>
@@ -173,7 +173,7 @@ const Home = () => {
         {/* ⚖️ COURT & JUSTICE - Citizen Style with Green */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4 border-b-4 border-gradient-to-r from-red-600 to-green-600 pb-2">
-            <div className="w-2 h-8 bg-gradient-to-b from-red-600 to-green-600 rounded"></div>
+            <div className="w-2 h-8 bg-linear-to-b from-red-600 to-green-600 rounded"></div>
             <h2 className="text-xl font-black text-blue-900 uppercase">Court & Justice</h2>
           </div>
           
@@ -181,9 +181,9 @@ const Home = () => {
             <div className="md:col-span-2 relative group cursor-pointer">
               <div className="relative overflow-hidden rounded">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Court" className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <span className="bg-gradient-to-r from-blue-600 to-green-600 text-white text-xs font-bold px-3 py-1 rounded">High Court</span>
+                  <span className="bg-linear-to-r from-blue-600 to-green-600 text-white text-xs font-bold px-3 py-1 rounded">High Court</span>
                   <h3 className="text-white text-xl font-bold mt-2">
                     High Court Upholds Digital Services Tax, Orders Review
                   </h3>
@@ -198,7 +198,7 @@ const Home = () => {
                 { title: "Environmental ruling halts construction project", court: "Environment", time: "3 hrs ago" },
                 { title: "Labor court rules for healthcare workers", court: "Employment", time: "5 hrs ago" }
               ].map((item, i) => (
-                <div key={i} className="bg-gradient-to-r from-green-50 to-white p-3 rounded border-l-4 border-green-600 hover:shadow-md cursor-pointer transition">
+                <div key={i} className="bg-linear-to-r from-green-50 to-white p-3 rounded border-l-4 border-green-600 hover:shadow-md cursor-pointer transition">
                   <span className="text-blue-900 text-xs font-bold uppercase">{item.court}</span>
                   <h4 className="font-bold text-sm mt-1 hover:text-green-600 transition">{item.title}</h4>
                   <span className="text-gray-400 text-xs">{item.time}</span>
@@ -212,7 +212,7 @@ const Home = () => {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4 border-b-4 border-gradient-to-r from-red-600 to-green-600 pb-2">
             <div className="flex items-center gap-3">
-              <div className="w-2 h-8 bg-gradient-to-b from-red-600 to-green-600 rounded"></div>
+              <div className="w-2 h-8 bg-linear-to-b from-red-600 to-green-600 rounded"></div>
               <h2 className="text-xl font-black text-blue-900 uppercase">Latest News</h2>
             </div>
             <a href="#" className="text-green-600 font-bold text-sm hover:underline flex items-center gap-1">
