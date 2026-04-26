@@ -125,7 +125,7 @@ const Home = () => {
               <img 
                 src="https://images.unsplash.com/photo-1504711432869-6d6549298492?auto=format&fit=crop&w=1200&q=80" 
                 alt="Main story" 
-                className="w-full h-75 md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-500" 
+                className="w-full h-75 md:h-112.5 object-cover group-hover:scale-105 transition-transform duration-500" 
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -239,16 +239,16 @@ const Home = () => {
                     <span className="absolute top-2 left-2 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse shadow-lg">LIVE</span>
                   )}
                   <span className={`absolute top-2 right-2 text-xs font-bold px-3 py-1 rounded-full text-white shadow-md ${
-                    article.cat === "Breaking" ? "bg-gradient-to-r from-red-600 to-red-500" : 
-                    article.cat === "Economy" ? "bg-gradient-to-r from-blue-600 to-green-600" : 
-                    "bg-gradient-to-r from-blue-900 to-green-700"
+                    article.cat === "Breaking" ? "bg-linear-to-r from-red-600 to-red-500" : 
+                    article.cat === "Economy" ? "bg-linear-to-r from-blue-600 to-green-600" : 
+                    "bg-linear-to-r from-blue-900 to-green-700"
                   }`}>
                     {article.cat}
                   </span>
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-base hover:text-green-600 transition line-clamp-2">{article.title}</h3>
-                  <span className="text-gray-400 text-xs mt-2 block flex items-center gap-1">
+                  <span className="text-gray-400 text-xs mt-2 block items-center gap-1">
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
@@ -264,7 +264,7 @@ const Home = () => {
         <div className="grid lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4 border-b-4 border-gradient-to-r from-red-600 to-green-600 pb-2">
-              <div className="w-2 h-8 bg-gradient-to-b from-red-600 to-green-600 rounded"></div>
+              <div className="w-2 h-8 bg-linear-to-b from-red-600 to-green-600 rounded"></div>
               <h2 className="text-xl font-black text-blue-900 uppercase">Trending Now</h2>
             </div>
             <div className="space-y-4">
@@ -286,7 +286,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-950 via-blue-900 to-green-900 text-white p-6 rounded shadow-xl border-t-4 border-green-500">
+          <div className="bg-linear-to-br from-blue-950 via-blue-900 to-green-900 text-white p-6 rounded shadow-xl border-t-4 border-green-500">
             <h3 className="font-black text-xl mb-3 flex items-center gap-2">
               <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -296,7 +296,7 @@ const Home = () => {
             <p className="text-gray-300 text-sm mb-4">Get the day's top stories delivered to your inbox.</p>
             <form className="space-y-3">
               <input type="email" placeholder="Your email" className="w-full px-4 py-2 rounded bg-white/10 border border-green-400/30 text-white placeholder-gray-400 text-sm focus:outline-none focus:border-green-400" />
-              <button type="submit" className="w-full bg-gradient-to-r from-red-600 to-green-600 hover:from-red-700 hover:to-green-700 text-white font-bold py-2 rounded text-sm transition shadow-lg">
+              <button type="submit" className="w-full bg-linear-to-r from-red-600 to-green-600 hover:from-red-700 hover:to-green-700 text-white font-bold py-2 rounded text-sm transition shadow-lg">
                 Subscribe Now
               </button>
             </form>
@@ -321,7 +321,7 @@ const Home = () => {
       </main>
 
       {/* 🔵 FOOTER - Citizen Style with Green */}
-      <footer className="bg-gradient-to-b from-blue-950 via-blue-900 to-green-900 text-white mt-12 border-t-4 border-gradient-to-r from-red-600 via-blue-600 to-green-600">
+      <footer className="bg-linear-to-b from-blue-950 via-blue-900 to-green-900 text-white mt-12 border-t-4 border-gradient-to-r">
         <div className="container mx-auto px-4 py-10">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
